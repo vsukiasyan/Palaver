@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				67360EBE208D4A340095462C /* Palaver */,
+				67360EED208D4BB00095462C /* README.md */,
 				67360ED3208D4A340095462C /* PalaverTests */,
 				67360EDE208D4A340095462C /* PalaverUITests */,
 				67360EBD208D4A340095462C /* Products */,
@@ -105,7 +106,6 @@
 				67360EC6208D4A340095462C /* Assets.xcassets */,
 				67360EC8208D4A340095462C /* LaunchScreen.storyboard */,
 				67360ECB208D4A340095462C /* Info.plist */,
-				67360EED208D4BB00095462C /* README.md */,
 			);
 			path = Palaver;
 			sourceTree = "<group>";
