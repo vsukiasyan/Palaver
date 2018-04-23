@@ -18,6 +18,7 @@
 		67360EF3208D69630095462C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF1208D69630095462C /* SWRevealViewController.m */; };
 		67360EF8208DA3420095462C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF7208DA3420095462C /* ChatVC.swift */; };
 		67360EFA208DA3530095462C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF9208DA3530095462C /* ChannelVC.swift */; };
+		67360EFC208DAA930095462C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EFB208DAA930095462C /* GradientView.swift */; };
 		67CC528855136E607694FFE9 /* Pods_PalaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */; };
 		B559EE58FED0EA29EFD826A1 /* Pods_PalaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		67360EF2208D69630095462C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		67360EF7208DA3420095462C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		67360EF9208DA3530095462C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		67360EFB208DAA930095462C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BAAE64C90FD0139740A7F6 /* Pods-PalaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalaverTests/Pods-PalaverTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 		67360EF5208DA31E0095462C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67360EFB208DAA930095462C /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 			files = (
 				67360EFA208DA3530095462C /* ChannelVC.swift in Sources */,
 				67360EF8208DA3420095462C /* ChatVC.swift in Sources */,
+				67360EFC208DAA930095462C /* GradientView.swift in Sources */,
 				67360EC0208D4A340095462C /* AppDelegate.swift in Sources */,
 				67360EF3208D69630095462C /* SWRevealViewController.m in Sources */,
 			);
