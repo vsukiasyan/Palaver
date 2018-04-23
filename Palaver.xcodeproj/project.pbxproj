@@ -16,6 +16,7 @@
 		67360ED5208D4A340095462C /* PalaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360ED4208D4A340095462C /* PalaverTests.swift */; };
 		67360EE0208D4A340095462C /* PalaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EDF208D4A340095462C /* PalaverUITests.swift */; };
 		67360EEE208D4BB00095462C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67360EED208D4BB00095462C /* README.md */; };
+		67360EF3208D69630095462C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF1208D69630095462C /* SWRevealViewController.m */; };
 		67CC528855136E607694FFE9 /* Pods_PalaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */; };
 		B559EE58FED0EA29EFD826A1 /* Pods_PalaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,9 @@
 		67360EDF208D4A340095462C /* PalaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalaverUITests.swift; sourceTree = "<group>"; };
 		67360EE1208D4A340095462C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67360EED208D4BB00095462C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		67360EF0208D69610095462C /* Palaver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Palaver-Bridging-Header.h"; sourceTree = "<group>"; };
+		67360EF1208D69630095462C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		67360EF2208D69630095462C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BAAE64C90FD0139740A7F6 /* Pods-PalaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalaverTests/Pods-PalaverTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +111,7 @@
 		67360EB3208D4A340095462C = {
 			isa = PBXGroup;
 			children = (
+				67360EEF208D69140095462C /* SupportingFiles */,
 				67360EBE208D4A340095462C /* Palaver */,
 				67360EED208D4BB00095462C /* README.md */,
 				67360ED3208D4A340095462C /* PalaverTests */,
@@ -156,6 +161,16 @@
 				67360EE1208D4A340095462C /* Info.plist */,
 			);
 			path = PalaverUITests;
+			sourceTree = "<group>";
+		};
+		67360EEF208D69140095462C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				67360EF2208D69630095462C /* SWRevealViewController.h */,
+				67360EF1208D69630095462C /* SWRevealViewController.m */,
+				67360EF0208D69610095462C /* Palaver-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		C749D83AF13BEA4AD6A32775 /* Frameworks */ = {
@@ -245,6 +260,7 @@
 				TargetAttributes = {
 					67360EBB208D4A340095462C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					67360ECF208D4A340095462C = {
@@ -470,6 +486,7 @@
 			files = (
 				67360EC2208D4A340095462C /* ViewController.swift in Sources */,
 				67360EC0208D4A340095462C /* AppDelegate.swift in Sources */,
+				67360EF3208D69630095462C /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,12 +653,15 @@
 			baseConfigurationReference = 11C050B055A788DB1D98ABEA /* Pods-Palaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6295RT7MX;
 				INFOPLIST_FILE = Palaver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.vsukiasyan.Palaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/Palaver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -652,12 +672,14 @@
 			baseConfigurationReference = FFE9E4EEC79F428BE3461DFC /* Pods-Palaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6295RT7MX;
 				INFOPLIST_FILE = Palaver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.vsukiasyan.Palaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/Palaver-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
