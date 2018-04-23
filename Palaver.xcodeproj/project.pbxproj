@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		19976A1BC2EF2A74FA1D38D4 /* Pods_Palaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B69A06FBEEC2E3B250A8C3F /* Pods_Palaver.framework */; };
 		67360EC0208D4A340095462C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EBF208D4A340095462C /* AppDelegate.swift */; };
-		67360EC2208D4A340095462C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EC1208D4A340095462C /* ViewController.swift */; };
 		67360EC5208D4A340095462C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67360EC3208D4A340095462C /* Main.storyboard */; };
 		67360EC7208D4A340095462C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67360EC6208D4A340095462C /* Assets.xcassets */; };
 		67360ECA208D4A340095462C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67360EC8208D4A340095462C /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		67360EE0208D4A340095462C /* PalaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EDF208D4A340095462C /* PalaverUITests.swift */; };
 		67360EEE208D4BB00095462C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67360EED208D4BB00095462C /* README.md */; };
 		67360EF3208D69630095462C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF1208D69630095462C /* SWRevealViewController.m */; };
+		67360EF8208DA3420095462C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF7208DA3420095462C /* ChatVC.swift */; };
+		67360EFA208DA3530095462C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EF9208DA3530095462C /* ChannelVC.swift */; };
 		67CC528855136E607694FFE9 /* Pods_PalaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */; };
 		B559EE58FED0EA29EFD826A1 /* Pods_PalaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +46,6 @@
 		424464C04C5C37E865A2B3F0 /* Pods-PalaverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalaverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalaverUITests/Pods-PalaverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		67360EBC208D4A340095462C /* Palaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67360EBF208D4A340095462C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67360EC1208D4A340095462C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67360EC4208D4A340095462C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67360EC6208D4A340095462C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67360EC9208D4A340095462C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		67360EF0208D69610095462C /* Palaver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Palaver-Bridging-Header.h"; sourceTree = "<group>"; };
 		67360EF1208D69630095462C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		67360EF2208D69630095462C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		67360EF7208DA3420095462C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		67360EF9208DA3530095462C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BAAE64C90FD0139740A7F6 /* Pods-PalaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalaverTests/Pods-PalaverTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +113,6 @@
 		67360EB3208D4A340095462C = {
 			isa = PBXGroup;
 			children = (
-				67360EEF208D69140095462C /* SupportingFiles */,
 				67360EBE208D4A340095462C /* Palaver */,
 				67360EED208D4BB00095462C /* README.md */,
 				67360ED3208D4A340095462C /* PalaverTests */,
@@ -135,12 +136,15 @@
 		67360EBE208D4A340095462C /* Palaver */ = {
 			isa = PBXGroup;
 			children = (
+				67360EF6208DA3220095462C /* Model */,
+				67360EF5208DA31E0095462C /* View */,
+				67360EF4208DA3180095462C /* Controller */,
 				67360EBF208D4A340095462C /* AppDelegate.swift */,
-				67360EC1208D4A340095462C /* ViewController.swift */,
 				67360EC3208D4A340095462C /* Main.storyboard */,
 				67360EC6208D4A340095462C /* Assets.xcassets */,
 				67360EC8208D4A340095462C /* LaunchScreen.storyboard */,
 				67360ECB208D4A340095462C /* Info.plist */,
+				67360EEF208D69140095462C /* SupportingFiles */,
 			);
 			path = Palaver;
 			sourceTree = "<group>";
@@ -171,6 +175,29 @@
 				67360EF0208D69610095462C /* Palaver-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		67360EF4208DA3180095462C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67360EF7208DA3420095462C /* ChatVC.swift */,
+				67360EF9208DA3530095462C /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67360EF5208DA31E0095462C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67360EF6208DA3220095462C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C749D83AF13BEA4AD6A32775 /* Frameworks */ = {
@@ -484,7 +511,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67360EC2208D4A340095462C /* ViewController.swift in Sources */,
+				67360EFA208DA3530095462C /* ChannelVC.swift in Sources */,
+				67360EF8208DA3420095462C /* ChatVC.swift in Sources */,
 				67360EC0208D4A340095462C /* AppDelegate.swift in Sources */,
 				67360EF3208D69630095462C /* SWRevealViewController.m in Sources */,
 			);
@@ -660,7 +688,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.vsukiasyan.Palaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/Palaver-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Palaver/SupportingFiles/Palaver-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -679,7 +707,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.vsukiasyan.Palaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/Palaver-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Palaver/SupportingFiles/Palaver-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
