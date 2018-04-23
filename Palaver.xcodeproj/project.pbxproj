@@ -21,6 +21,7 @@
 		67360EFC208DAA930095462C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EFB208DAA930095462C /* GradientView.swift */; };
 		67360EFF208DB66B0095462C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360EFE208DB66B0095462C /* Constants.swift */; };
 		67360F01208DBAF70095462C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360F00208DBAF70095462C /* LoginVC.swift */; };
+		67360F03208E8A090095462C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67360F02208E8A090095462C /* CreateAccountVC.swift */; };
 		67CC528855136E607694FFE9 /* Pods_PalaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */; };
 		B559EE58FED0EA29EFD826A1 /* Pods_PalaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		67360EFB208DAA930095462C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		67360EFE208DB66B0095462C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		67360F00208DBAF70095462C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		67360F02208E8A090095462C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BAAE64C90FD0139740A7F6 /* Pods-PalaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalaverTests/Pods-PalaverTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0CABF3FCC7291903F7BC5A9 /* Pods_PalaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 				67360EF7208DA3420095462C /* ChatVC.swift */,
 				67360EF9208DA3530095462C /* ChannelVC.swift */,
 				67360F00208DBAF70095462C /* LoginVC.swift */,
+				67360F02208E8A090095462C /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 			files = (
 				67360EFA208DA3530095462C /* ChannelVC.swift in Sources */,
 				67360EF8208DA3420095462C /* ChatVC.swift in Sources */,
+				67360F03208E8A090095462C /* CreateAccountVC.swift in Sources */,
 				67360F01208DBAF70095462C /* LoginVC.swift in Sources */,
 				67360EFC208DAA930095462C /* GradientView.swift in Sources */,
 				67360EC0208D4A340095462C /* AppDelegate.swift in Sources */,
