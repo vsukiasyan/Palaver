@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelVC: UIViewController {
+class ChannelVC: UIViewController { 
     
     @IBOutlet weak var loginBtn: UIButton!
     
