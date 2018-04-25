@@ -25,6 +25,8 @@
 		67446142208FD402000D0453 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67446141208FD402000D0453 /* UserDataService.swift */; };
 		67446144208FDEB5000D0453 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67446143208FDEB5000D0453 /* AvatarPickerVC.swift */; };
 		67446146208FE0A6000D0453 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67446145208FE0A6000D0453 /* AvatarCell.swift */; };
+		67B9B7B4209129DD0017807B /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B9B7B3209129DD0017807B /* MessageService.swift */; };
+		67B9B7B620912A0E0017807B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B9B7B520912A0E0017807B /* Channel.swift */; };
 		67CC528855136E607694FFE9 /* Pods_PalaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC71C92F63AC75047B9F698 /* Pods_PalaverTests.framework */; };
 		67D50928208EF93A00905EEB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D50927208EF93A00905EEB /* AuthService.swift */; };
 		67D5092A208F057400905EEB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D50929208F057400905EEB /* RoundedButton.swift */; };
@@ -81,6 +83,8 @@
 		67446141208FD402000D0453 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		67446143208FDEB5000D0453 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		67446145208FE0A6000D0453 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		67B9B7B3209129DD0017807B /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		67B9B7B520912A0E0017807B /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		67D50927208EF93A00905EEB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		67D50929208F057400905EEB /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		67FE5156208FEE320060A910 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 		67360EF6208DA3220095462C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67B9B7B520912A0E0017807B /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			children = (
 				67D50927208EF93A00905EEB /* AuthService.swift */,
 				67446141208FD402000D0453 /* UserDataService.swift */,
+				67B9B7B3209129DD0017807B /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -576,7 +582,9 @@
 				67360EFA208DA3530095462C /* ChannelVC.swift in Sources */,
 				67446144208FDEB5000D0453 /* AvatarPickerVC.swift in Sources */,
 				67D5092A208F057400905EEB /* RoundedButton.swift in Sources */,
+				67B9B7B620912A0E0017807B /* Channel.swift in Sources */,
 				67FE5157208FEE320060A910 /* CircleImage.swift in Sources */,
+				67B9B7B4209129DD0017807B /* MessageService.swift in Sources */,
 				67360EF8208DA3420095462C /* ChatVC.swift in Sources */,
 				67446142208FD402000D0453 /* UserDataService.swift in Sources */,
 				67360F03208E8A090095462C /* CreateAccountVC.swift in Sources */,
@@ -757,7 +765,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6295RT7MX;
 				INFOPLIST_FILE = Palaver/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.vsukiasyan.Palaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -777,7 +785,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6295RT7MX;
 				INFOPLIST_FILE = Palaver/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.vsukiasyan.Palaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
