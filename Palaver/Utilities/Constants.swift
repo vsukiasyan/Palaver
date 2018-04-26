@@ -25,6 +25,7 @@ let smackPurplePlaceholder = #colorLiteral(red: 0.1764705926, green: 0.011764706
 
 // Notification Constants
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+let NOTIF_UPDATE_TABLE = Notification.Name("notifUpdateTable")
 
 //Segues
 let TO_LOGIN = "toLogin"

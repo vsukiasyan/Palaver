@@ -45,12 +45,14 @@ class AddChannelVC: UIViewController {
             }
         })
         self.dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: NOTIF_UPDATE_TABLE, object: nil)
         
 //        SocketService.instance.addChannel(channelName: channelName, channelDescription: channelDesc) { (success) in
 //            if success {
 //                self.dismiss(animated: true, completion: nil)
 //            }
 //        }
+        
     }
     
     func setupView() {

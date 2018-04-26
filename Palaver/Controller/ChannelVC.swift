@@ -25,19 +25,22 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.updateTable), name: NOTIF_UPDATE_TABLE, object: nil)
         
-        SocketService.instance.getChannel { (success) in
-            if success {
-                self.tableView.reloadData()
-            }
-        }
+//        SocketService.instance.getChannel { (success) in
+//            if success {
+//                self.tableView.reloadData()
+//            }
+//        }
         
     }
     
     @IBAction func addChannelPressed(_ sender: UIButton) {
-        let addChannel = AddChannelVC()
-        addChannel.modalPresentationStyle = .custom
-        present(addChannel, animated: true, completion: nil)
+        if AuthService.instance.isLoggedIn {
+            let addChannel = AddChannelVC()
+            addChannel.modalPresentationStyle = .custom
+            present(addChannel, animated: true, completion: nil)
+        }
     }
     
     
@@ -46,18 +49,19 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("ViewDidAppear")
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
             tableView.reloadData()
+            print("viewDidAppear", MessageService.instance.channels)
         } else {
             loginBtn.setTitle("Login", for: .normal)
             userImg.image = UIImage(named: "menuProfileIcon")
             userImg.backgroundColor = UIColor.clear
         }
     }
+    
 
     @IBAction func loginBtnPressed(_ sender: UIButton) {
         if AuthService.instance.isLoggedIn {
@@ -80,6 +84,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             userImg.image = UIImage(named: "menuProfileIcon")
             userImg.backgroundColor = UIColor.clear
         }
+    }
+    
+    @objc func updateTable() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.tableView.reloadData()
+        }
+        //print("RELOADED!", MessageService.instance.channels)
     }
     
     
