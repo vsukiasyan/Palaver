@@ -85,7 +85,7 @@ class AuthService {
                 self.userEmail = json!["user"].stringValue
                 self.authToken = json!["token"].stringValue
                 
-                
+                print(self.authToken)
                 
                 self.isLoggedIn = true 
                 completion(true)
@@ -144,6 +144,30 @@ class AuthService {
                 
                 UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
                 completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
+    
+    func createChannel(name: String, description: String, completion: @escaping CompletionHandler) {
+        
+        let body: [String: Any] = [
+            "name": name,
+            "description": description
+            ]
+        
+        Alamofire.request(URL_CREATE_CHANNEL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            if response.result.error == nil {
+                //guard let data = response.data else { return }
+                //let json = try? JSON(data: data)
+                //print(json!)
+                
+                let channel = Channel(channelTitle: name, channelDescription: description, id: nil)
+                MessageService.instance.channels.append(channel)
+                
+                
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
