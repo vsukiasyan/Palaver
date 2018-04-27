@@ -21,7 +21,11 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundView = GradientView()
-
+        
+        print(UserDataService.instance.name)
+        print(UserDataService.instance.avatarName)
+        print(UserDataService.instance.avatarColor)
+        
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
@@ -55,7 +59,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
             tableView.reloadData()
-            print("viewDidAppear", MessageService.instance.channels)
+            //print("viewDidAppear", MessageService.instance.channels)
         } else {
             loginBtn.setTitle("Login", for: .normal)
             userImg.image = UIImage(named: "menuProfileIcon")
